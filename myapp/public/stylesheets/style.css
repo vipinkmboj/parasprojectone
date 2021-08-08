@@ -1,8 +1,84 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: #00B7FF;
+nav {
+  width: 100%;
+  height: 55px;
+  background-color: lightblue;
 }
+.menu-icon {
+  display: none;  
+  position: absolute;
+  left: 1em;
+  top: .5em;
+  padding: .5em;
+}
+.menu-icon .menu-icon-bar {
+  width: 18px;
+  height: 3px;  
+  margin: 4px;
+  background-color: maroon;
+}
+.menu-icon .menu-icon-bar:hover {
+  cursor: pointer;
+}
+ul {
+  margin: 0;
+  padding: 16px;
+  display: flex;
+  background-color: lightblue;
+  
+}
+ ul li {
+   list-style: none;
+   padding: 0 16px 0 16px;
+   
+ }
+  ul li a {
+    text-decoration: none;
+    color: maroon;
+    font-size: 1.2em;
+  }
+  ul li a:hover {
+    color: rgb(179, 35, 35);
+  }
+
+  .signup-signin ul{
+    position: absolute;
+    right: 0;
+    top: 0;    
+  }
+
+  @media only screen and (min-width: 280px) and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+    ul {
+      display: none;
+    }
+    .signup-signin ul{
+      display: flex;
+    }
+  }
+
+
+  @media only screen and (min-width: 480px) {
+    /*ul:not(:last-child) {
+      display: none;
+    } */
+  }
+  @media only screen and (min-width: 768px) {
+    
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    
+  }
+  
